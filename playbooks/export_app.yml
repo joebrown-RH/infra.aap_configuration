@@ -7,7 +7,7 @@
     - ansible.controller
   tasks:
     - name: Export projects
-      ansible.controller.export: # or ansible.controller.export
+      awx.awx.export: # or ansible.controller.export
         projects: all
       register: export_results
 
