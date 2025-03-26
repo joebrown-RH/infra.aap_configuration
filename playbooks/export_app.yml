@@ -5,12 +5,6 @@
   gather_facts: false
   collections:
     - ansible.controller
-  environment:
-     CONTROLLER_HOST: https://localhost
-     CONTROLLER_USERNAME: admin
-     CONTROLLER_PASSWORD: password
-     CONTROLLER_VERIFY_SSL: false
-
   tasks:
     - name: Export projects
       ansible.controller.export: # or ansible.controller.export
