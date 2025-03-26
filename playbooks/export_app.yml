@@ -4,7 +4,7 @@
   connection: local
   gather_facts: false
   collections:
-    - ansible.controller
+    - awx.awx
   tasks:
     - name: Export projects
       awx.awx.export: # or ansible.controller.export
